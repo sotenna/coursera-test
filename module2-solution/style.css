@@ -1,1 +1,97 @@
 
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+h3{
+    background-color: coral;
+    width: 100px;
+    border: black 1px solid;
+    margin-top: 0%;
+    text-align: center;
+    float: right;
+    clear: both;
+    border-radius: 5px;
+}
+section{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    width: 32%;
+    height: 150px;
+    float: left;
+    border-radius: 5px;
+}
+#lorem{
+    background-color: cadetblue;
+    margin-bottom: 20px;
+    margin: 10px;  
+}
+#ipsum{
+    background-color: darkkhaki;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+#dolor{
+    background-color: mediumturquoise;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+p{
+    padding: 10px;
+    text-align: justify;
+    margin-top: 30px;
+}
+/*--------------------------------------------------------------Desktop---------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1440px){
+    #lorem{
+        width: 32%;
+        height: 150px;
+    }
+    #ipsum{
+        width: 32%;
+        height: 150px;
+    }
+    #dolor{
+        width: 32%;
+        height: 150px;
+    }
+}
+/*-------------------------------------------------------------Medium-----------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px){
+     #lorem{
+        width: 45%;
+        margin-left: 40px;
+    }
+    #ipsum{
+        width: 45%;
+    }
+    #dolor{
+        width: 92%;
+        margin-left: 40px;
+    }
+}
+/*------------------------------------------------------------Mobile-------------------------------------------------------------------*/
+@media (max-width: 767px){
+    #lorem{
+        width: 90%;
+        margin-left: 30px;
+    }
+    #ipsum{
+        width: 90%;
+        margin-left: 30px;
+    }
+    #dolor{
+        width: 90%;
+        margin-left: 30px;
+        
+    }
+}
