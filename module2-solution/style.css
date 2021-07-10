@@ -5,6 +5,26 @@
     margin: 0px;
     padding: 0px;
 }
+
+body{
+    background-color: white;
+}
+
+#content{
+    max-width: 100vw;
+    align-items: center;
+}
+
+
+.section {
+    max-width: 30%;
+    font-size: 18px;
+    border: 2px solid black;
+    float: left;
+    position: relative;
+    left: 40px;
+}
+
 h1{
     margin-bottom: 15px;
     text-align: center;
@@ -14,22 +34,12 @@ h1{
 h3{
     background-color: coral;
     width: 100px;
-    border: black 1px solid;
+    border: black 2px solid;
     margin-top: 0%;
     text-align: center;
-    float: right;
-    clear: both;
-    border-radius: 5px;
+    float: right;    
 }
-section{
-    border: 1px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    width: 32%;
-    height: 150px;
-    float: left;
-    border-radius: 5px;
-}
+
 #lorem{
     background-color: cadetblue;
     margin-bottom: 20px;
@@ -50,48 +60,30 @@ p{
     text-align: justify;
     margin-top: 30px;
 }
-/*--------------------------------------------------------------Desktop---------------------------------------------------------------*/
-@media (min-width: 992px) and (max-width: 1440px){
-    #lorem{
-        width: 32%;
-        height: 150px;
-    }
-    #ipsum{
-        width: 32%;
-        height: 150px;
-    }
-    #dolor{
-        width: 32%;
-        height: 150px;
+
+
+/* Media */
+
+/* Desktop View */
+@media (min-width: 992px) and(max-width:1400px) {
+    .section {
+        max-width: 35%;
     }
 }
-/*-------------------------------------------------------------Medium-----------------------------------------------------------------*/
-@media (min-width: 768px) and (max-width: 991px){
-     #lorem{
-        width: 45%;
-        margin-left: 40px;
+/* Medium View */
+@media (max-width:991px) {
+    .section {
+        max-width: 40%;
     }
-    #ipsum{
-        width: 45%;
-    }
-    #dolor{
-        width: 92%;
-        margin-left: 40px;
+
+    .span{
+        max-width: 82%;
     }
 }
-/*------------------------------------------------------------Mobile-------------------------------------------------------------------*/
-@media (max-width: 767px){
-    #lorem{
-        width: 90%;
-        margin-left: 30px;
-    }
-    #ipsum{
-        width: 90%;
-        margin-left: 30px;
-    }
-    #dolor{
-        width: 90%;
-        margin-left: 30px;
-        
+
+/* Mobile View */
+@media (max-width:768px) {
+    .section {
+        max-width: 80%;
     }
 }
